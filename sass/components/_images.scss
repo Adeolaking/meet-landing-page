@@ -1,0 +1,50 @@
+.logo{
+    margin: 30px;
+}
+
+
+.hero-images{
+    display: none;
+ 
+}
+@media (min-width:1290px){
+    .first-section{
+        flex-direction: row;
+        .text-cont{
+            width: initial;
+        }
+    }
+    .hero-images{
+        display: block;
+    }
+    .hero-image{
+        display: none;
+    }
+}
+
+// Num:02
+@media (min-width:1230px){
+
+    .images{
+        width: 70%;
+        .image{
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+
+// image-collection
+.images{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+     margin-top: 100px;
+    & img{
+        max-width: 200px;
+        border-radius: 10px;
+        margin: 10px;
+    }
+}

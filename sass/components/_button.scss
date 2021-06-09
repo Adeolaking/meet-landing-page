@@ -1,0 +1,30 @@
+/* buttons style */
+.btns{
+    display: flex;
+    justify-content: center;   
+    height: 150px;
+    @media (max-width:600px) {
+        &{
+            display: flex;
+            justify-content: space-evenly;   
+            flex-direction: column;
+        }
+    }
+}
+
+.btn{ 
+    &-cta{
+        padding: 1.2rem;
+    }
+    &-blue{
+        background-color: $dark-sky-blue;
+        @include links-style;
+        margin: 10px;
+    }
+    &-purple{
+        background-color: $purple;
+        @include links-style;
+    }
+}
+
+

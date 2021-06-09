@@ -1,0 +1,283 @@
+* {
+  /* margin: 0; */
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: system-ui, -apple-system,  'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+.first-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+.hero-image {
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.down-section {
+  height: 500px;
+  padding: 10px;
+  background-repeat: no-repeat;
+  background: -webkit-gradient(linear, left top, right bottom, from(#4d97a9b9)), url(../../assets/mobile/image-footer.jpg);
+  background: linear-gradient(to right bottom, #4d97a9b9), url(../../assets/mobile/image-footer.jpg);
+  background-size: 100% 100%;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.down-section .text-cont h1, .down-section .text-cont p {
+  color: white;
+}
+
+@media (min-width: 530px) {
+  .down-section {
+    height: 400px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#4d97a9b9)), url(../../assets/tablet/image-footer.jpg);
+    background: linear-gradient(to right bottom, #4d97a9b9), url(../../assets/tablet/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .down-section .text-cont {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1000px) {
+  .text-cont:not(:last-of-type) {
+    width: 50%;
+  }
+  .down-section {
+    background: -webkit-gradient(linear, left top, right bottom, from(#4d97a9b9)), url(../../assets/desktop/image-footer.jpg);
+    background: linear-gradient(to right bottom, #4d97a9b9), url(../../assets/desktop/image-footer.jpg);
+    height: 300px;
+  }
+  .down-section .text-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .down-section .text-cont h1, .down-section .text-cont p, .down-section .text-cont .btns {
+    width: 33.33%;
+    text-align: left;
+  }
+}
+
+.text-cont {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.text-cont h1 {
+  font-size: 3.5rem;
+  color: #28283D;
+}
+
+.text-cont h2 {
+  text-transform: uppercase;
+  color: #4D96A9;
+  letter-spacing: .5rem;
+  font-size: 1rem;
+}
+
+.text-cont p {
+  font-size: 1.2rem;
+  color: #7c7c96;
+}
+
+/* buttons style */
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 150px;
+}
+
+@media (max-width: 600px) {
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.btn-cta {
+  padding: 1.2rem;
+}
+
+.btn-blue {
+  background-color: #4D96A9;
+  text-decoration: none;
+  color: #e3e3e3;
+  border-radius: 30px;
+  font-weight: bold;
+  padding: inherit;
+  margin: 10px;
+}
+
+.btn-purple {
+  background-color: #855FB1;
+  text-decoration: none;
+  color: #e3e3e3;
+  border-radius: 30px;
+  font-weight: bold;
+  padding: inherit;
+}
+
+.logo {
+  margin: 30px;
+}
+
+.hero-images {
+  display: none;
+}
+
+@media (min-width: 1290px) {
+  .first-section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .first-section .text-cont {
+    width: initial;
+  }
+  .hero-images {
+    display: block;
+  }
+  .hero-image {
+    display: none;
+  }
+}
+
+@media (min-width: 1230px) {
+  .images {
+    width: 70%;
+  }
+  .images .image {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 100px;
+}
+
+.images img {
+  max-width: 200px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+/* line and ball */
+.string .pendulum-line {
+  border-left: 2px #e3e3e3 solid;
+  height: 100px;
+  width: 0px;
+  margin: auto;
+  position: relative;
+}
+
+.string .pendulum-ball {
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  line-height: 2;
+  left: -30px;
+  bottom: -40px;
+  width: 60px;
+  height: 60px;
+  border: 2px #e3e3e3 solid;
+  color: #8689a2;
+  font-size: 1.5rem;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=main.css.map */

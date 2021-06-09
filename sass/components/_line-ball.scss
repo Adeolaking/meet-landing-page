@@ -1,0 +1,27 @@
+/* line and ball */
+.string{
+
+    .pendulum{
+        &-line{
+            border-left: 2px $dark-white solid;
+            height: 100px;
+            width: 0px;
+            margin: auto;
+            position: relative;
+        }
+        &-ball{
+            background-color: $white;
+            position: absolute;
+            text-align: center;
+            line-height: 2;
+            left: -30px;
+            bottom: -40px;
+            width: 60px;
+            height:60px;
+            border: 2px $dark-white solid;
+            color: #8689a2;
+            font-size: 1.5rem;
+            border-radius: 50%;
+        }
+    }
+}

@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://adeolaking.github.io/meet-landing-page/)
-- Live Site URL: [Add live site URL here](https://adeolaking.github.io/meet-landing-page/)
+- Solution URL: [meet landing page live](https://adeolaking.github.io/meet-landing-page/)
+<!-- - Live Site URL: [Add live site URL here](https://adeolaking.github.io/meet-landing-page/) -->
 
 ## My process
 

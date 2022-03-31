@@ -53,8 +53,13 @@ body{
     padding: 1rem;
     transition: all .2s ease;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     background: linear-gradient(to right bottom, #4d97a9b9), url(../../assets/mobile/image-footer.jpg);
     background-size: cover;
+=======
+    background: linear-gradient(to right bottom, #4d97a9b9), url(../assets/mobile/image-footer.jpg);
+    background-size: 100% 100%;
+>>>>>>> c419d1df026905d9bc002ebcfaea1b794feff2de
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -77,8 +82,13 @@ body{
         font-size:70%;
     }
     .down-section{
+<<<<<<< HEAD
         height:40rem;
         background:linear-gradient(to right bottom, #4d97a9b9), url(../../assets/tablet/image-footer.jpg);
+=======
+        height:400px;
+        background:linear-gradient(to right bottom, #4d97a9b9), url(../assets/tablet/image-footer.jpg);
+>>>>>>> c419d1df026905d9bc002ebcfaea1b794feff2de
         background-repeat: no-repeat;
         background-size: cover; 
         margin: 0;
@@ -106,7 +116,11 @@ body{
     }
     .down-section{
         background:linear-gradient(to right bottom, #4d97a9b9), url(../assets/desktop/image-footer.jpg);
+<<<<<<< HEAD
         height: 19rem;
+=======
+        height: 300px;
+>>>>>>> c419d1df026905d9bc002ebcfaea1b794feff2de
         .text-cont{
          
            display: flex;

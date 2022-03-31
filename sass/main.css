@@ -1,13 +1,15 @@
 * {
-  /* margin: 0; */
+  margin: 0;
   padding: 0;
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.3%;
 }
 
 body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: system-ui, -apple-system,  'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   text-align: center;
   display: -webkit-box;
@@ -24,6 +26,9 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
+  font-size: 1.2rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .first-section {
@@ -50,12 +55,14 @@ body {
 }
 
 .down-section {
-  height: 500px;
-  padding: 10px;
+  height: 50rem;
+  padding: 1rem;
+  -webkit-transition: all .2s ease;
+  transition: all .2s ease;
   background-repeat: no-repeat;
   background: -webkit-gradient(linear, left top, right bottom, from(#4d97a9b9)), url(../../assets/mobile/image-footer.jpg);
   background: linear-gradient(to right bottom, #4d97a9b9), url(../../assets/mobile/image-footer.jpg);
-  background-size: 100% 100%;
+  background-size: cover;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,17 +73,24 @@ body {
           flex-direction: column;
 }
 
+.down-section .text-cont * {
+  margin-bottom: 3rem;
+}
+
 .down-section .text-cont h1, .down-section .text-cont p {
   color: white;
 }
 
 @media (min-width: 530px) {
+  html {
+    font-size: 70%;
+  }
   .down-section {
-    height: 400px;
+    height: 40rem;
     background: -webkit-gradient(linear, left top, right bottom, from(#4d97a9b9)), url(../../assets/tablet/image-footer.jpg);
     background: linear-gradient(to right bottom, #4d97a9b9), url(../../assets/tablet/image-footer.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
     margin: 0;
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -94,13 +108,24 @@ body {
 }
 
 @media (min-width: 1000px) {
+  html {
+    font-size: 100%;
+  }
+  body {
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    min-width: -webkit-min-content;
+    min-width: -moz-min-content;
+    min-width: min-content;
+  }
   .text-cont:not(:last-of-type) {
     width: 50%;
   }
   .down-section {
-    background: -webkit-gradient(linear, left top, right bottom, from(#4d97a9b9)), url(../../assets/desktop/image-footer.jpg);
-    background: linear-gradient(to right bottom, #4d97a9b9), url(../../assets/desktop/image-footer.jpg);
-    height: 300px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#4d97a9b9)), url(../assets/desktop/image-footer.jpg);
+    background: linear-gradient(to right bottom, #4d97a9b9), url(../assets/desktop/image-footer.jpg);
+    height: 19rem;
   }
   .down-section .text-cont {
     display: -webkit-box;
@@ -154,7 +179,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 150px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 600px) {
@@ -172,6 +199,11 @@ body {
   }
 }
 
+.btn {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
 .btn-cta {
   padding: 1.2rem;
 }
@@ -182,8 +214,8 @@ body {
   color: #e3e3e3;
   border-radius: 30px;
   font-weight: bold;
-  padding: inherit;
-  margin: 10px;
+  padding: 1.2rem;
+  margin: 1rem;
 }
 
 .btn-purple {
@@ -192,7 +224,21 @@ body {
   color: #e3e3e3;
   border-radius: 30px;
   font-weight: bold;
-  padding: inherit;
+  padding: 1.2rem;
+}
+
+.btn:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0 1.4rem 2rem rgba(40, 40, 61, 0.6);
+          box-shadow: 0 1.4rem 2rem rgba(40, 40, 61, 0.6);
+}
+
+.btn:active {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .logo {
@@ -255,6 +301,20 @@ body {
   max-width: 200px;
   border-radius: 10px;
   margin: 10px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.images img:hover {
+  -webkit-transform: translateY(-1rem) scale(1.1);
+          transform: translateY(-1rem) scale(1.1);
+  -webkit-box-shadow: 0 1.4rem 3rem rgba(124, 122, 122, 0.5);
+          box-shadow: 0 1.4rem 3rem rgba(124, 122, 122, 0.5);
+}
+
+.images img:hover .images img img:not(:hover) {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 /* line and ball */
@@ -279,5 +339,14 @@ body {
   color: #8689a2;
   font-size: 1.5rem;
   border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */

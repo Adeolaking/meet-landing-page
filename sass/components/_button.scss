@@ -2,29 +2,44 @@
 .btns{
     display: flex;
     justify-content: center;   
-    height: 150px;
+    align-items: center;
+    // height: 150px;
     @media (max-width:600px) {
         &{
             display: flex;
             justify-content: space-evenly;   
             flex-direction: column;
+
         }
     }
 }
 
 .btn{ 
+    transition: all .2s;
     &-cta{
         padding: 1.2rem;
     }
     &-blue{
         background-color: $dark-sky-blue;
         @include links-style;
-        margin: 10px;
+        margin: 1rem;
     }
     &-purple{
         background-color: $purple;
         @include links-style;
     }
+
+    &:hover{
+       transform: translateY(-10px);
+       box-shadow: 0 1.4rem 2rem rgba($dark-blue, .6);
+    }
+    &:active{
+        transform:translateY(0);
+        box-shadow: none;
+
+    }
+
 }
+
 
 

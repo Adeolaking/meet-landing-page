@@ -1,11 +1,15 @@
 *{
-    /* margin: 0; */
+    margin: 0; 
     padding: 0;
-    box-sizing: inherit;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.3%;
 }
 
 body{
-    box-sizing: border-box;
+
     font-family:
     system-ui,
     -apple-system, 
@@ -22,6 +26,10 @@ body{
     justify-content: center;
     align-items: center;
     margin: 0;
+    font-size: 1.2rem;
+    margin-left: auto;
+    margin-right: auto;
+    // scroll-snap-type: ;
 }
 .first-section{
     width: 100%;
@@ -41,34 +49,43 @@ body{
 
 
 .down-section{
-    height: 500px;
-    padding: 10px;
+    height: 50rem;
+    padding: 1rem;
+    transition: all .2s ease;
     background-repeat: no-repeat;
     background: linear-gradient(to right bottom, #4d97a9b9), url(../../assets/mobile/image-footer.jpg);
-    background-size: 100% 100%;
+    background-size: cover;
     margin: 0;
     display: flex;
     flex-direction: column;
     .text-cont{
+        & *{
+            margin-bottom: 3rem;
+
+        }
         h1,p{
             color: white;
         }
     }
 
+
 }
 
 
 @media (min-width:530px){
+    html{
+        font-size:70%;
+    }
     .down-section{
-        height:400px;
+        height:40rem;
         background:linear-gradient(to right bottom, #4d97a9b9), url(../../assets/tablet/image-footer.jpg);
         background-repeat: no-repeat;
-        background-size: 100% 100%;
+        background-size: cover; 
         margin: 0;
         justify-content: space-around;
         align-items: center;
-       width: 100%;
-       display: flex;
+        width: 100%;
+        display: flex;
        .text-cont{
         margin: 0;
        }
@@ -77,21 +94,28 @@ body{
 
 
 @media (min-width:1000px){
-    
+    html{
+        font-size: 100%;
+    }
+    body{
+        max-width: max-content;
+        min-width: min-content;
+    }
     .text-cont:not(:last-of-type){
         width: 50%;
     }
     .down-section{
-        background:linear-gradient(to right bottom, #4d97a9b9), url(../../assets/desktop/image-footer.jpg);
-        height: 300px;
+        background:linear-gradient(to right bottom, #4d97a9b9), url(../assets/desktop/image-footer.jpg);
+        height: 19rem;
         .text-cont{
+         
            display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: space-evenly;
             h1,p,.btns{
                 width: 33.33%;
-                text-align: left;
+                text-align: left;      
             }
         }
             

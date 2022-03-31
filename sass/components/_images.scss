@@ -42,9 +42,20 @@
     flex-wrap: wrap;
     justify-content: center;
      margin-top: 100px;
+    
+
     & img{
         max-width: 200px;
         border-radius: 10px;
         margin: 10px;
+        transition: all .2s ease-in-out;
+        &:hover{
+            transform:translateY(-1rem) scale(1.1);
+            box-shadow: 0 1.4rem 3rem rgba(#7c7a7a, .5);
+        }
+      &:hover & img:not(:hover){
+          transform: scale(.9);
+
+      }
     }
 }
